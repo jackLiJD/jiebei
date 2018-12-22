@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/x76"
+    android:paddingRight="@dimen/x76">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.ald.ebei.ui.view.EbeiCountDownTextView
+            android:id="@+id/pwd_login_get"
+            android:layout_width="@dimen/x200"
+            android:layout_height="@dimen/y72"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:background="@drawable/login_start_get_verification"
+            android:gravity="center"
+            android:text="@string/pwd_login_get_verification"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x28" />
+
+        <RelativeLayout
+            android:layout_toLeftOf="@id/pwd_login_get"
+            android:layout_width="304dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/pwd_login_verification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/login_verification"
+                android:textColor="#666"
+                android:textSize="@dimen/x28" />
+
+            <EditText
+                android:maxLength="6"
+                android:inputType="number"
+                android:id="@+id/pwd_login_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/x60"
+                android:layout_toRightOf="@id/pwd_login_verification"
+                android:background="@null"
+                android:hint="@string/pwd_login_input_verification"
+                android:textColor="#666"
+                android:textSize="@dimen/x28" />
+
+            <View
+                android:id="@+id/ic_login_line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x2"
+                android:layout_below="@id/pwd_login_pwd"
+                android:layout_marginRight="@dimen/x10"
+                android:layout_marginTop="@dimen/y30"
+                android:background="#cbcbcb" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

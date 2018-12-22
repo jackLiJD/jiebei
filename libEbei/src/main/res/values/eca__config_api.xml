@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="api51FbConfig">
+        <item>/user/login</item>
+        <item>/user/logout</item>
+        <item>/system/appUpgrade</item>
+    </string-array>
+
+
+</resources>

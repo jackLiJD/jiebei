@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="array_term_test">
+        <item>1个月</item>
+        <item>2个月</item>
+        <item>3个月</item>
+        <item>4个月</item>
+        <item>5个月</item>
+        <item>6个月</item>
+        <item>7个月</item>
+        <item>8个月</item>
+        <item>9个月</item>
+        <item>10个月</item>
+        <item>11个月</item>
+        <item>12个月</item>
+    </array>
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/help"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y64"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:text="帮助中心"
+        android:textSize="@dimen/x34" />
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y88"
+        android:layout_below="@id/help"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/borrow_money_rl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/borrow_money_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/color_ff9549"
+                android:textSize="@dimen/x30" />
+
+            <View
+                android:id="@+id/borrow_money_view"
+                android:layout_width="@dimen/x120"
+                android:layout_height="@dimen/y4"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/color_ff9549" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/back_money_rl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/back_money_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="@color/color_ff9549"
+                android:textSize="@dimen/x30" />
+
+            <View
+                android:id="@+id/back_money_view"
+                android:layout_width="@dimen/x120"
+                android:layout_height="@dimen/y4"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@color/color_ff9549"
+                android:visibility="invisible" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="#eee" />
+
+    <FrameLayout
+        android:id="@+id/help_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/title"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:id="@+id/call_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y82"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/help_content"
+        android:layout_marginBottom="@dimen/y20"
+        android:layout_marginLeft="@dimen/x116"
+        android:layout_marginRight="@dimen/x116"
+        android:layout_marginTop="@dimen/y20"
+        android:background="@drawable/rect_button_blue"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_phone" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/x10"
+            android:text="客服电话 400-002-5151"
+            android:textColor="#ff4c4c"
+            android:textSize="@dimen/x24" />
+
+    </LinearLayout>
+
+</LinearLayout>

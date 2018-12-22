@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ald.ebei">
+
+    <uses-sdk tools:overrideLibrary="com.umeng.socialize.evernote,com.umeng.socialize.pinterest,com.ala.amount" />
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- 友盟权限 -->
+
+
+    <!-- 人脸识别有盾 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <!-- 同盾风控 start -->
+    <!-- 必选权限 -->
+    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 可选权限，不声明此部分权限将放弃部分设备信息的采集，对数据分析及设备指纹的精准度有一定影响 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_UPDATES" />
+    <!-- 同盾风控 end -->
+
+
+    <!-- 在SDCard中创建与删除文件权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 往SDCard写入数据权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 忽略电池的优化 -->
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+
+    <!--百度地图权限-->
+    <!-- 这个权限用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 这个权限用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于读取手机当前的状态-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 访问网络，网络定位需要上网-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- SD卡读取权限，用户写入离线定位数据-->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!--百度地图权限配置结束-->
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/ic_launcher_cityloan"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name="com.ald.ebei.EbeiBaseHtml5WebView" />
+        <activity
+            android:name="com.ald.ebei.EbeiHtml5WebView"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <!--<activity android:name="com.ald.ebei.activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>-->
+        <activity
+            android:name="com.ald.ebei.dushi.activity.EbeiDsMainActivity"
+            android:launchMode="singleTask" />
+        <activity android:name="com.ald.ebei.dushi.activity.EbeiHelpDetailsActivity" />
+        <activity
+            android:name="com.ald.ebei.auth.activity.EbeiIdAuthActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.ald.ebei.auth.activity.EbeiStartFaceActivity" />
+        <activity android:name="com.ald.ebei.auth.activity.EbeiFaceErrActivity" />
+        <activity android:name="com.ald.ebei.dushi.activity.EbeiLoanDetailSubmitActivity" />
+        <activity android:name="com.ald.ebei.dushi.activity.EbeiBankCardAddActivity" />
+        <activity android:name="com.ald.ebei.dushi.activity.EbeiBankCardManagerActivity" />
+        <activity android:name="com.ald.ebei.dushi.activity.EbeiBankCardInfoActivity" />
+        <activity android:name="com.ald.ebei.dushi.activity.EbeiRepaymentActivity" />
+        <activity android:name="com.ald.ebei.dushi.activity.EbeiRepaymentAdvanceActivity" />
+        <activity android:name="com.ald.ebei.dushi.activity.EbeiSupportBankActivity" />
+
+        <receiver
+            android:name="com.ald.ebei.receiver.EbeiJpushReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="cn.jpush.android.intent.REGISTRATION" />
+                <action android:name="cn.jpush.android.intent.MESSAGE_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_RECEIVED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_OPENED" />
+                <action android:name="cn.jpush.android.intent.NOTIFICATION_CLICK_ACTION" />
+                <action android:name="cn.jpush.android.intent.CONNECTION" />
+
+                <category android:name="com.ald.xgcredit" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name="com.ald.ebei.activity.SettingActivityEbei" />
+        <activity
+            android:name=".dushi.activity.EbeiVerifyCodeActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".dushi.activity.EbeiRepaymentSuccessActivity" />
+        <activity
+            android:name=".auth.idcard.EbeiIDCardScanActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Holo.NoActionBar.TranslucentDecor"
+            android:screenOrientation="portrait"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            >
+        </activity>
+        <activity
+            android:name=".auth.liveness.EbeiLivenessActivity"
+            android:screenOrientation="portrait" />
+        <!--魔蝎配置开始-->
+        <activity android:name="com.moxie.client.MainActivity" />
+
+        <activity
+            android:name="com.moxie.client.accessible.AccessibleCrawlerActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <service
+            android:name="com.moxie.client.accessible.AccessibleCrawlerService"
+            android:accessibilityFlags="flagReportViewIds"
+            android:enabled="true"
+            android:exported="true"
+            android:label="@string/accessibility_name"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/accessible_crawler_config" />
+        </service>
+        <!--魔蝎配置结束-->
+
+        <!--百度地图配置开始-->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="tegoLkZ6Vii2vZ1OYcYN4DL8AL57TGhO3" />
+        <!--百度地图配置开始-->
+    </application>
+
+</manifest>

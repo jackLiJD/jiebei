@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="fb_colorPrimary">@color/colorPrimaryNew</color>   <!-- 主色 -->
+    <color name="fb_colorAccent">@color/color_ff5546</color>    <!-- 强调色 -->
+    <color name="fb_colorCold">@color/color_47a6f9</color>      <!-- 冷暖色 -->
+    <color name="fb_dark_first">@color/color_232323</color>     <!-- 一级黑 -->
+    <color name="fb_dark_second">@color/color_646464</color>    <!-- 二级黑 -->
+    <color name="fb_dark_third">@color/color_969696</color>     <!-- 三级灰 -->
+    <color name="fb_background">@color/color_f6f6f6</color>     <!-- 背景色 -->
+    <color name="fb_hint">#c6c6d6</color>
+    <color name="fb_divider">@color/color_e4e4e4</color>        <!-- 分割线 -->
+    <color name="fb_fake_background">@color/color_63bf39</color>
+
+    <color name="color_ff6e34">#ff6e34</color>
+    <color name="color_232323">#232323</color>
+    <color name="color_646464">#646464</color>
+    <color name="color_969696">#969696</color>
+    <color name="color_e4e4e4">#e4e4e4</color>
+    <color name="color_dedede">#dedede</color>
+    <color name="color_ededed">#ededed</color>
+    <color name="color_f6f6f6">#f6f6f6</color>
+    <color name="color_63bf39">#63bf39</color>
+    <color name="color_333333">#333333</color>
+    <color name="color_ff5546">#ff5546</color>
+    <color name="color_47a6f9">#47a6f9</color>
+    <color name="color_999999">#999999</color>
+    <color name="color_404040">#404040</color>
+    <color name="color_cccccc">#cccccc</color>
+    <color name="color_303030">#303030</color>
+    <color name="color_eeeeee">#eeeeee</color>
+
+    <!-- 状态栏颜色(Lollipop - API Level 21 以上) -->
+    <color name="colorPrimaryDark">#3F454F</color>
+    <!-- 灰色背景色 -->
+    <color name="fw_colorGrey">#F8F8F8</color>
+    <!-- 控件背景色 -->
+    <color name="fw_colorViewBg">#FFFFFF</color>
+
+    <!-- 辅色-->
+    <color name="fw_app_color_secondary">#ffa500</color>
+    <!-- 点击色-->
+    <color name="fw_app_color_select">#f8f8f8</color>
+    <!-- 按钮主色调-->
+    <color name="fw_app_color_btn">#ffaba3</color>
+    <!-- 按钮描边-->
+    <color name="fw_app_color_btn_stroke">#ffccc6</color>
+
+    <color name="fw_background_white_color">#ffffff</color>
+    <!--eca_appbar -->
+    <color name="fw_app_bar_color">#ffffff</color>
+    <!-- 黑色透明 -->
+    <color name="fw_popup_main_background">#b0000000</color>
+    <!-- 透明灰色背景 -->
+    <color name="fw_transparent_grey">#33000000</color>
+
+    <!-- 字体颜色 -->
+    <color name="fw_text_important_black">#111111</color>
+    <color name="fw_text_dark">#333333</color>
+    <color name="fw_text_black">#666666</color>
+    <color name="fw_text_grey">#999999</color>
+    <color name="fw_text_grey_white">#FFAEAEAE</color>
+    <color name="fw_text_red">#FF5F5F</color>
+    <color name="fw_text_white">#FFFFFF</color>
+
+    <!-- EditText-hint-灰色 -->
+    <color name="fw_grey_hit">#CCCCCC</color>
+    <!-- 边框、button-disable -->
+    <color name="fw_grey_bg">#DADADA</color>
+
+    <!-- 分隔线主要颜色 -->
+    <color name="fw_default_divider_color">#cfcfcf</color>
+
+    <!-- button按下颜色 -->
+    <color name="fw_btn_pressed_color">#cfcfcf</color>
+    <!-- button不可点击 -->
+    <color name="fw_btn_disable_color">#cfcfcf</color>
+    <!-- button默认颜色 -->
+    <color name="fw_btn_white_color">#ffffffff</color>
+
+    <!-- 白色背景 -->
+    <color name="fw_bg_white_color">#ffffffff</color>
+
+    <!-- 进度条颜色 -->
+    <color name="fw_progress_line_color">#e6e6e6</color>
+
+    <color name="color_F3F5F7">#F3F5F7</color>
+    <color name="color_F4F4F4">#f4f4f4</color>
+    <color name="color_ff5555">#ff5555</color>
+
+    <color name="mis_actionbar_color">#21282C</color>
+    <color name="color_ff8833">#ff8833</color>
+    <color name="color_cfd5de">#cfd5de</color>
+    <color name="color_adadad">#adadad</color>
+    <color name="color_ff5252">#ff5252</color>
+    <color name="color_2e2e2e">#2e2e2e</color>
+    <color name="color_f3f3f3">#f3f3f3</color>
+    <color name="color_ffe110">#ffe110</color>
+    <color name="color_444444">#444444</color>
+    <color name="color_7B7B83">#7B7B83</color>
+
+    <!-- app主色 -->
+    <color name="colorPrimaryNew">#FF8833</color>
+    <color name="colorPrimary">#ffe110</color>
+    <color name="colorAccent">#fd9a43</color>
+    <color name="colorAccent_new">#5088E5</color>
+
+    <!--我的订单选择tab颜色-->
+
+    <!--start覆盖fragmentWork的color-->
+    <color name="fw_app_color_principal">#fd9a43</color>
+    <!-- 灰色线 -->
+    <color name="fw_grey_line">#cfcfcf</color>
+    <!-- 灰色背景 -->
+    <color name="fw_background_color">#f9f9f9</color>
+    <!-- 灰色 -->
+    <color name="fw_bg_grey_color">#eeeeee</color>
+    <!--end覆盖fragmentWork的color-->
+
+
+    <!-- 背景色 -->
+    <color name="background_color">#eeeeee</color>
+    <color name="background_white_color">#ffffff</color>
+
+    <!--淘宝底色-->
+
+    <!-- 遮盖颜色 -->
+    <!-- 50%遮盖颜色 -->
+    <color name="cover_black_color">#76000000</color>
+    <!-- 30%遮盖颜色 -->
+    <!-- 10%遮盖颜色 -->
+    <!--透明-->
+
+    <!-- tab-->
+    <color name="tab_normal_color">#bbbbbb</color>
+
+    <!-- 正常颜色 -->
+    <color name="normal_color">#fb9544</color>
+    <!-- 按下颜色 -->
+    <color name="pressed_color">#ec8b01</color>
+    <!-- 不可点击 -->
+    <color name="disable_color">#cfcfcf</color>
+
+    <!-- 分隔线主要颜色（标签描边颜色） -->
+    <color name="default_divider_color">#eeeeee</color>
+    <!-- 分隔线次要颜色 -->
+
+    <!-- 文字 -->
+    <!-- 正常文字 -->
+    <color name="text_normal_color">#ff666666</color>
+    <!-- 重要文字 -->
+    <color name="text_important_color">#ff111111</color>
+    <!-- 普通文字 -->
+    <color name="text_ordinary_color">#ff232323</color>
+    <!-- 普通文字 -->
+
+    <!-- 辅助文字 -->
+    <color name="text_other_color">#ff999999</color>
+    <color name="text_white_color">#ffffffff</color>
+    <color name="text_deep_blue">#ff7bd9ed</color>
+    <!-- 微黄色-->
+
+    <!-- 我的页面 -->
+    <color name="item_text_color">#3d3d3d</color>
+
+    <!--50%透明度白-->
+    <color name="thirty_percent_white_color">#47000000</color>
+
+    <!--借钱首页购买商品标题颜色-->
+    <color name="text_color_cash_loan_tip_action">#0076ff</color>
+
+    <!--智齿客服相关资源文件修改-->
+    <color name="sobot_color_title_bar_bg">#ffffffff</color>
+    <color name="sobot_color_title_bar_title">#ff333333</color>
+    <color name="sobot_bg_white">#ff333333</color>
+
+    <color name="sobot_lv_message_bg">#eeeeee</color>
+
+    <!--最近使用-->
+    <color name="color_divider_e4">#e4e4e4</color>
+
+    <!--信用认证已认证、已绑定字体颜色-->
+    <color name="color_auth_status_auth">#47a6f9</color>
+    <!--信用认证未认证、未绑定字体颜色-->
+    <color name="color_auth_status_not_auth">#969696</color>
+    <!--信用认证认证中字体颜色-->
+    <color name="color_auth_status_auth_ing">#ff6e34</color>
+
+    <color name="color_auth_step_txt">#ff6e34</color>
+    <color name="color_un_auth_step_txt">#bababa</color>
+    <color name="color_un_auth_step_line">#ffece5</color>
+
+    <color name="color_auth_id_txt">#969696</color>
+    <color name="color_auth_dialog_bg">#fcfcfc</color>
+
+    <color name="color_auth_status_txt">#ff6e34</color>
+
+    <color name="color_F9F9F9">#f9f9f9</color>
+
+    <color name="text_color_black">#2e2e2e</color>
+    <!--二级文字-->
+    <color name="text_color_normal">#666666</color>
+
+    <color name="text_color_FF4C4C">#ff4c4c</color>
+
+    <color name="colorWhite">#FFFFFF</color>
+
+    <!--身份证识别顶部提示背景-->
+    <color name="color_bg_auth_id_top_tip">#fff1f1f1</color>
+    <!--身份证识别顶部提示文字颜色-->
+    <color name="color_txt_auth_id_top_tip">#959595</color>
+
+    <color name="color_bg_line">#f1f1f1</color>
+    <color name="color_txt_id_hint">#666666</color>
+    <color name="color_txt_id_auth_info">#333333</color>
+    
+    <color name="color_txt_start_face_tip">#158EFF</color>
+    <color name="color_txt_start_face_requirement">#333333</color>
+
+    <color name="color_txt_face_err">#333333</color>
+    <color name="color_txt_face_err_detail">#959595</color>
+
+    <!--主色-->
+    <color name="color_colorPrimary">#158EFF</color>
+    <color name="color_txt_home_default_gray">#A1A8B6</color>
+    <color name="color_bg_home_main_default">#F5F5F5</color>
+    <color name="color_txt_home_tip_default">#333333</color>
+    <color name="color_txt_home_tip">#959595</color>
+    <color name="color_txt_home_tip_bottom">#b9b9b9</color>
+    <color name="color_txt_home_checkmark">#74869A</color>
+    <color name="color_txt_home_tip_term">#A3CFFF</color>
+    <color name="color_txt_33">#333333</color>
+    <color name="color_txt_home_loan_info_tip_price">#c7dbff</color>
+    <color name="color_bg_home_loan_info_term_month">#1970FF</color>
+    <color name="color_bg_home_loan_info_term">#c7dbff</color>
+    <color name="color_text_af">#afafaf</color>
+    <color name="color_text_c4">#c4c4c4</color>
+    <color name="translucent_white">#61FFFFFF</color>
+    <color name="color_bg_e3">#E3E3E3</color>
+    <color name="color_a3cfff">#a3cfff</color>
+    <color name="color_txt_tip_important">#FF0000</color>
+    <color name="color_bg_F5F5F5">#F5F5F5</color>
+    <color name="color_black_percent_50">#80000000</color>
+
+    <color name="color_splash_second">#ff1717</color>
+</resources>

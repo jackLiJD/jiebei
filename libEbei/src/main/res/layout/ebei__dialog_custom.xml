@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_custom_frame"
+    android:minWidth="@dimen/x600"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/msg_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:singleLine="true"
+        android:text="@string/ebei_msg_toast_title"
+        android:textColor="@color/fw_text_dark"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/msg_content"
+        style="@style/WhiteSelectorLayoutThemeLine"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/msg_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:maxLines="5"
+            android:minLines="2"
+            android:padding="5dp"
+            android:text="@string/ebei_msg_system_error"
+            android:textColor="@color/fw_text_grey"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/msg_negative"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/ebei_cancel"
+            android:textColor="@color/fw_app_color_principal" />
+
+        <View
+            android:id="@+id/msg_line"
+            style="@style/vLineStyle" />
+
+        <TextView
+            android:id="@+id/msg_positive"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/ebei_confirm"
+            android:textColor="@color/fw_app_color_principal" />
+    </LinearLayout>
+</LinearLayout>

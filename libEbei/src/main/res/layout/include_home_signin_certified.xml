@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/color_bg_home_main_default">
+
+    <LinearLayout
+        android:id="@+id/rl_home_certified"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layerlist_bg_home_main"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="29dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@mipmap/homepage_amount_icon"
+            android:drawablePadding="5dp"
+            android:text="申请金额(元)"
+            android:textColor="@color/color_txt_home_tip_default" />
+
+        <TextView
+            android:id="@+id/tv_price_certified"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50000"
+            android:textColor="@color/color_txt_home_tip_default"
+            android:textSize="64sp"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/seek_cash_loan_money_certified"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="23dp"
+            android:layout_marginTop="29dp"
+            android:focusable="true"
+            android:max="100"
+            android:maxHeight="@dimen/x6"
+            android:minHeight="@dimen/x6"
+            android:progressDrawable="@drawable/seek_bar_progress"
+            android:thumb="@mipmap/icon_homepage_slider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="23dp"
+            android:layout_marginRight="23dp">
+
+            <TextView
+                android:id="@+id/tv_cash_loan_min_amount_certified"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="0"
+                android:textColor="@color/color_txt_home_tip_default"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_cash_loan_max_amount_certified"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="0"
+                android:textColor="@color/color_txt_home_tip_default"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_term_certified"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:scrollbars="none" />
+
+        <TextView
+            android:id="@+id/tv_tip_certified"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="7dp"
+            android:drawablePadding="2dp"
+            android:drawableRight="@mipmap/icon_homepage_leftslip"
+            android:text="左滑选择更多期限"
+            android:textColor="@color/color_txt_home_tip_term"
+            android:textSize="10sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:orientation="horizontal"
+            android:paddingLeft="22dp"
+            android:paddingRight="22dp">
+
+            <TextView
+                android:id="@+id/tv_tip_one_certified"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:drawablePadding="2dp"
+                android:drawableRight="@mipmap/icon_homepage_tips"
+                android:gravity="center"
+                android:text="月供(元)"
+                android:textColor="@color/color_txt_33"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_tip_two_certified"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="4000.00"
+                android:textColor="@color/color_txt_33"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_tip_interest_certified"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="22dp"
+            android:layout_marginTop="14dp"
+            android:textColor="@color/color_txt_home_tip"
+            android:textSize="13sp"
+            tools:text="(含利息、服务费：1000.00)"/>
+    </LinearLayout>
+
+    <com.ald.ebei.ui.EbeiNoDoubleClickButton
+        android:id="@+id/btn_default_apply_certified"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="53dp"
+        android:layout_marginRight="53dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_next_button"
+        android:text="立即申请"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/rl_home_certified" />
+
+</android.support.constraint.ConstraintLayout>

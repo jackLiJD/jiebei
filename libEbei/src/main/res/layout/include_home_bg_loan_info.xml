@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:paddingBottom="20dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guidelineVertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="25dp"/>
+
+    <View
+        android:layout_width="3dp"
+        android:layout_height="12dp"
+        android:background="#158EFF"
+        android:layout_marginTop="5dp"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineVertical"
+        app:layout_constraintTop_toTopOf="@id/guidelineHorizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="申请金额(元)"
+        android:textSize="15sp"
+        android:textColor="@color/color_txt_home_tip_default"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineVertical"
+        app:layout_constraintTop_toTopOf="@id/guidelineHorizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="借款期限"
+        android:textSize="15sp"
+        android:textColor="@color/color_txt_home_tip_default"
+        android:layout_marginStart="173dp"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineVertical"
+        app:layout_constraintTop_toTopOf="@id/guidelineHorizontal"/>
+
+    <TextView
+        android:id="@+id/tv_loan_term"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3个月"
+        android:textSize="15sp"
+        android:textColor="@color/color_txt_home_tip_default"
+        android:layout_marginStart="252dp"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineVertical"
+        app:layout_constraintTop_toTopOf="@id/guidelineHorizontal"/>
+
+    <TextView
+        android:id="@+id/tv_loan_price_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="80000"
+        android:textStyle="bold"
+        android:textSize="45sp"
+        android:textColor="@color/color_txt_home_tip_default"
+        android:includeFontPadding="false"
+        android:layout_marginTop="28dp"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineVertical"
+        app:layout_constraintTop_toTopOf="@id/guidelineHorizontal"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="月供(元)"
+        android:textSize="15sp"
+        android:textColor="@color/color_txt_home_tip_default"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="173dp"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineVertical"
+        app:layout_constraintTop_toTopOf="@id/guidelineHorizontal"/>
+
+    <TextView
+        android:id="@+id/tv_loan_price_month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="30000.00"
+        android:textSize="15sp"
+        android:textColor="@color/color_txt_home_tip_default"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="252dp"
+        app:layout_constraintLeft_toLeftOf="@id/guidelineVertical"
+        app:layout_constraintTop_toTopOf="@id/guidelineHorizontal"/>
+
+</android.support.constraint.ConstraintLayout>

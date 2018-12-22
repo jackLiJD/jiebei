@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/home_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="借吧"
+        android:textColor="@color/color_txt_home_tip_default"
+        android:textSize="20sp"
+        android:padding="15dp"
+        android:background="@color/colorWhite"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/home_title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@color/colorWhite">
+
+                <com.youth.banner.Banner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_txt_home_tip"
+                    android:minHeight="175dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_home_loan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--未登录情况展示布局-->
+                <include
+                    android:id="@+id/include_home_default"
+                    layout="@layout/include_home_default"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible" />
+
+                <!--登录未实名-->
+                <include
+                    android:id="@+id/include_home_signin_uncertified"
+                    layout="@layout/include_home_signin_uncertified"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+                <!--登录实名 未产生借款-->
+                <include
+                    android:id="@+id/include_home_signin_certified"
+                    layout="@layout/include_home_signin_certified"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+                <!--审核 放款-->
+                <include
+                    android:id="@+id/include_progress"
+                    layout="@layout/fragment_home_loan_info_audit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <!--登录 有欠款-->
+                <include
+                    android:id="@+id/include_home_repayment"
+                    layout="@layout/include_home_repayment_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <!--本期已还清-->
+                <include
+                    android:id="@+id/include_home_curr_finish"
+                    layout="@layout/include_home_repayment_curr_finish"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!--<TextView-->
+        <!--android:id="@+id/tv_tip_student"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="5dp"-->
+        <!--android:drawableLeft="@mipmap/icon_buttom_homepage_tips"-->
+        <!--android:drawablePadding="2dp"-->
+        <!--android:text="不向学生提供贷款服务"-->
+        <!--android:textColor="@color/color_txt_home_tip_bottom"-->
+        <!--android:textSize="12sp"-->
+        <!--android:visibility="gone"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--app:layout_constraintRight_toRightOf="parent" />-->
+
+</android.support.constraint.ConstraintLayout>
+

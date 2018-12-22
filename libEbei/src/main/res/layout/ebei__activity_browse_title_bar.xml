@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/top_panel"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y100"
+    android:background="@color/fw_background_white_color"
+    tools:ignore="RtlHardcoded,RtlSymmetry,ContentDescription,HardcodedText">
+
+    <TextView
+        android:id="@+id/btn_browser_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:drawablePadding="4dp"
+        android:drawableStart="@drawable/appbar_back"
+        android:gravity="center"
+        android:paddingLeft="@dimen/x32"
+        android:paddingRight="@dimen/x32" />
+
+    <TextView
+        android:id="@+id/btn_browser_close"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@+id/btn_browser_back"
+        android:gravity="center"
+        android:paddingEnd="@dimen/x32"
+        android:text="@string/ebei_btn_text_close"
+        android:textColor="@color/fw_text_black"
+        android:textSize="@dimen/x32"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:id="@+id/btn_browser_option"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="@android:color/transparent"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:src="@drawable/fw__web_browser_option"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/top_title"
+        android:layout_width="180dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="@string/ebei_act_title_default_browser"
+        android:textColor="@color/fw_text_black"
+        android:textSize="@dimen/x34" />
+
+    <ImageView
+        android:id="@+id/btn_browser_more_two"
+        android:layout_width="@dimen/x88"
+        android:layout_height="@dimen/y88"
+        android:layout_centerInParent="true"
+        android:layout_toStartOf="@+id/btn_browser_more"
+        android:paddingLeft="@dimen/x20"
+        android:paddingRight="@dimen/x20" />
+
+    <ImageView
+        android:id="@+id/btn_browser_more"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="@dimen/x32"
+        android:paddingRight="@dimen/x32" />
+
+
+    <TextView
+        android:id="@+id/tv_browser_more"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:textColor="@color/fw_text_black"
+        tools:ignore="RtlHardcoded" />
+
+</RelativeLayout>

@@ -1,0 +1,194 @@
+<resources>
+    <!--<string name="app_name">人脸验证</string>-->
+    <string name="meglive_prompt">请在光线充足的情况下进行检测</string>
+    <string name="meglive_detect_initfailed">检测器初始化失败</string>
+    <string name="meglive_camera_initfailed">打开前置摄像头失败</string>
+    <string name="meglive_getpermission_motion">请打开手机读取运动数据权限</string>
+    <string name="meglive_phone_vertical">请竖直握紧手机</string>
+    <string name="meglive_keep_eyes_open">请勿用手遮挡眼睛</string>
+    <string name="meglive_keep_mouth_open">请勿用手遮挡嘴巴</string>
+    <string name="face_not_found">请让我看到您的正脸</string>
+    <string name="face_too_dark">请让光线再亮点</string>
+    <string name="face_too_bright">请让光线再暗点</string>
+    <string name="face_too_small">请再靠近一些</string>
+    <string name="face_too_large">请再离远一些</string>
+    <string name="face_too_blurry">请避免侧光和背光</string>
+    <string name="face_out_of_rect">请保持脸在人脸框中</string>
+    <string name="meglive_pitch">缓慢点头</string>
+    <string name="meglive_yaw">左右摇头</string>
+    <string name="meglive_mouth_open_closed">张嘴</string>
+    <string name="meglive_eye_open_closed">眨眼</string>
+    <string name="meglive_pos_yaw_left">左转</string>
+    <string name="meglive_pos_yaw_right">右转</string>
+    <string name="tipsmouth">Open your mouth and close.</string>
+    <string name="tipblink">Do blink with your eyes.</string>
+    <string name="tippose">Rotate your pose vertically.</string>
+    <string name="facelost">Face Lost</string>
+    <string name="timeout">超时</string>
+    <string name="authok">Success</string>
+    <string name="aufail">Failed</string>
+    <string name="steps">活体检测:</string>
+    <string name="pos_detection">POS</string>
+    <string name="mouth_detection">MOUTH</string>
+    <string name="blink_detection">BLINK</string>
+
+    <array name="detect_type">
+        <item>眨眼</item>
+        <item>张嘴</item>
+        <item>摇头</item>
+    </array>
+    <array name="detect_result">
+        <item></item>
+        <item>LIVEPASS</item>
+        <item>人脸追踪失败</item>
+        <item>超时失败</item>
+        <item>LIVENOTPASS</item>
+    </array>
+
+    <string name="loading_text">使用说明：\n1、首先您需要输入姓名；\n2、之后您需要按照屏幕上的提示完成3个动作，以通过活体检测，同时软件会将您的人脸图像发送至服务器进行人脸验证；\n3、如果您没有通过活体检测或者人脸验证，则登录失败，反之则登录成功。</string>
+    <string name="verify_success">验证成功</string>
+    <string name="liveness_detection_failed">活体检测失败</string>
+    <string name="liveness_detection_failed_timeout">活体检测超时失败</string>
+    <string name="liveness_detection_failed_action_blend">活体检测动作错误</string>
+    <string name="liveness_detection_failed_not_video">活体检测连续性检测失败</string>
+    <string name="novalidframe">没有合适的图像用于人脸识别</string>
+
+    <string name="app_name">都市E呗</string>
+    <string name="app_name_spare2">都市1号</string>
+    <string name="app_name_spare3">都市2号</string>
+    <string name="build_type">debug</string>
+    <string name="product">framework</string>
+    <string name="product_category">framework</string>
+
+    <string name="ebei_app_exit">再按一次退出程序</string>
+    <!-- common -->
+    <string name="ebei_empty" />
+    <string name="ebei_msg_toast_title">提示</string>
+    <string name="ebei_msg_system_error">系统异常请联系客服人员!</string>
+    <string name="ebei_confirm">确定</string>
+    <string name="ebei_close">关闭</string>
+    <string name="ebei_cancel">取消</string>
+    <string name="ebei_next">下一步</string>
+    <string name="ebei_page_loading">加载中&#8230;</string>
+    <!-- permission -->
+    <string name="ebei_permission_name_camera">为了能更好的使用本应用，请授予摄像头权限。</string>
+    <string name="ebei_permission_name_contacts">为了更好地评估您的信用额度，请允许西瓜信用访问您的通讯录</string>
+    <string name="ebei_permission_name_location">为了能更好的使用本应用，请开启定位权限。</string>
+    <string name="ebei_permission_name_sd">为了能更好的使用本应用，请开启SD卡读写权限。</string>
+    <string name="ebei_permission_settings">去设置</string>
+
+    <string name="ebei_dialog_permission_request_btn_txt">点我打开</string>
+
+    <string name="ebei_btn_text_sure">确认</string>
+    <string name="ebei_dialog_permission_request_tip">为了更好地评估您的信用额度，请允许西瓜信用访问您的通讯录</string>
+    <string name="ebei_act_title_default_browser">正在加载...</string>
+    <string name="ebei_btn_text_call">呼叫</string>
+    <string name="ebei_text_tip_h5_network_err">网络出错啦，请点击重新加载</string>
+    <string name="ebei_text_tip_h5_network_reconnect">重新连接</string>
+    <string name="ebei_btn_text_close">关闭</string>
+
+    <!-- 征信认证 -->
+    <string name="ebei_rr_identification_err">认证出错，请重新认证</string>
+    <string name="ebei_rr_identification_success">认证成功</string>
+    <string name="ebei_credit_promote_phone_err">运营商认证失败,\n请重试</string>
+    <string name="ebei_credit_idf_toast">已认证，无需重复认证</string>
+
+    <!--提升信用提示框-->
+    <string name="ebei_credit_promote_dialog_title">温馨提示</string>
+    <string name="ebei_credit_promote_dialog_cancel">取消</string>
+    <string name="ebei_credit_promote_dialog_make_sure">确认</string>
+
+    <!--权限提示框-->
+    <string name="permission_title">温馨提示</string>
+    <string name="permission_make_sure">知道了</string>
+
+    <!--身份信息-->
+    <string name="ebei_user_id_card_front">身份证正面</string>
+
+    <string name="ebei_liven_app_error">人脸识别错误，请重试</string>
+
+    <string name="ebei_web_view_win_rank">上月获奖名单</string>
+
+    <string name="ebei_dialog_btn_customer">联系客服</string>
+
+    <string name="ebei_rr_id_auth_modify">修改</string>
+    <string name="ebei_rr_id_back">身份证背面</string>
+    <string name="ebei_rr_id_auth_hint2">身份信息仅用于西瓜信用信用认证</string>
+    <string name="ebei_rr_id_auth_hint1">银行级加密，保障您的信息安全</string>
+    <string name="ebei_id_confirm_sure">确定</string>
+    <string name="ebei_id_confirm_check_name">请检查身份信息，姓名有误可直接修改</string>
+    <string name="ebei_id_confirm_check">姓名</string>
+    <string name="ebei_id_confirm_card">身份证</string>
+    <string name="ebei_id_confirm_retake">返回重拍</string>
+
+    <string name="ebei_err_init_context">Ebei初始化失败,上下文参数不能为空</string>
+    <string name="ebei_err_init_appkey">Ebei初始化失败,AppId不能为空</string>
+    <string name="ebei_err_init_phone">Ebei初始化失败,请检查手机号是否正确</string>
+    <string name="ebei_err_init_phone_appkey">初始化失败，请检查APPkey及手机号</string>
+    <string name="ebei_err_location">请先开启定位</string>
+
+    <string name="login_true_protol">请勾选注册协议</string>
+    <string name="login_true_pwd">密码需8-16位英文+数字</string>
+    <string name="login_true">请输入正确的手机号码</string>
+    <string name="login_phone_number">手机号</string>
+    <string name="login_next">下一步</string>
+    <string name="pwd_login_pwd">密码</string>
+    <string name="pwd_login_input">请输入密码</string>
+    <string name="pwd_login_forget">忘记密码?</string>
+    <string name="pwd_login_verification_code">使用验证码登录</string>
+    <string name="login_verification">验证码</string>
+    <string name="pwd_login_input_verification">请输入验证码</string>
+    <string name="pwd_login_get_verification">获取验证码</string>
+    <string name="pwd_login_use_pwd">使用密码登录</string>
+    <string name="pwd_login_use_verification">使用验证码登录</string>
+    <string name="pwd_login_set_password">请设置6-16位登录密码</string>
+    <string name="pwd_login_set_pwd">设置密码</string>
+    <string name="login_verification_tag">验证码  </string>
+    <string name="find_pwd_agree">我已阅读并同意</string>
+    <string name="find_pwd_agreement">《都市E呗注册协议》</string>
+    <string name="find_pwd">找回密码</string>
+    <string name="find_pwd_reset">s后重试</string>
+    <string name="find_pwd_input_number">请输入手机号码</string>
+    <string name="find_pwd_input_phone_number">手机号码</string>
+    <string name="register_title">注册</string>
+    <string name="pwd_login_input_true_verification">请输入正确验证码</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="update_toast_none">当前已是最新版本</string>
+    <!--update start-->
+    <string name="android_auto_update_download_progress">正在下载:%1$d%%</string>
+    <string name="call_phone">400-002-5151</string>
+
+    <string name="text_rrid_auth_hint_real_name">真实姓名</string>
+    <string name="text_rrid_auth_hint_id_number">身份证号</string>
+
+    <string name="text_loan_detail_submit_loan_term">借款期限</string>
+    <string name="text_loan_detail_submit_loan_month">月供(元)</string>
+    <string name="text_loan_detail_submit_repayment_type">还款方式</string>
+    <string name="text_loan_detail_submit_loan_type">借款用途</string>
+    <string name="text_loan_detail_submit_repayment_source">还款来源</string>
+    <string name="text_loan_detail_submit_select">请选择</string>
+
+    <string name="text_bank_card_add_people">持卡人</string>
+    <string name="text_bank_card_add_num">银行卡号</string>
+    <string name="text_bank_card_add_bank">所属银行</string>
+    <string name="text_bank_card_add_phone">预留手机号</string>
+    <string name="text_bank_card_add_verification">验证码</string>
+
+    <string name="text_repayment_overdue_total">含本期待还金额%1s元</string>
+    <string name="modify_pwd_input_msg_code_title">设置登录密码</string>
+    <string name="setting_title">设置</string>
+    <string name="bank_card_no">**** **** **** %1s</string>
+    <string name="bank_card_no_list">****\t\t\t\t\t****\t\t\t\t\t****\t\t\t\t\t%1s</string>
+
+    <string name="guide_btn_start">立即进入</string>
+    <string name="splash_ad_time">%1$d 秒</string>
+    <string name="formatter_home_repaying_amount">含还款中金额%1s</string>
+
+    <string name="txt_guide_title_one">额度高</string>
+    <string name="txt_guide_title_two">到账快</string>
+    <string name="txt_guide_title_three">易操作</string>
+</resources>

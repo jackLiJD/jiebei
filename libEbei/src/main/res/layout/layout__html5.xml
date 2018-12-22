@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ald.ebei.ui.EbeiInputMethodLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="HardcodedText,ContentDescription">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/ebei__activity_browse_title_bar" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#E6E6E6"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:id="@+id/webview_progress"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#FFFFFF"
+                android:indeterminate="false"
+                android:max="100"
+                android:progressDrawable="@drawable/fw__progress_horizontal" />
+
+            <FrameLayout
+                android:id="@+id/web_view_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/ll_error_network"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tv_error_info"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawablePadding="@dimen/y10"
+                        android:drawableTop="@drawable/ic_error_network"
+                        android:gravity="center_horizontal"
+                        android:text="@string/ebei_text_tip_h5_network_err"
+                        android:textColor="@color/color_969696"
+                        android:textSize="@dimen/x24" />
+
+                    <TextView
+                        android:id="@+id/tv_error_retry"
+                        android:layout_width="@dimen/x400"
+                        android:layout_height="@dimen/x88"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="@dimen/y100"
+                        android:layout_marginTop="@dimen/y28"
+                        android:background="@drawable/shape_solid_primary_r8"
+                        android:gravity="center"
+                        android:text="@string/ebei_text_tip_h5_network_reconnect"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/x32" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/hidden_web_view_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <com.ald.ebei.ui.EbeiCreWebView
+                    android:id="@+id/web_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/html_small_back_btn"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/fw__html_small_back_btn"
+            android:visibility="gone" />
+
+    </FrameLayout>
+</com.ald.ebei.ui.EbeiInputMethodLinearLayout>

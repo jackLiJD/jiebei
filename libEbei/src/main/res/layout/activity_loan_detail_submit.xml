@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cl_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/sv_main"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:id="@+id/tv_tip_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="借款金额(元)"
+                android:textColor="@color/text_normal_color"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_loan_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@mipmap/back_loaddetails_money"
+                android:gravity="center"
+                android:textColor="@color/color_txt_33"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_tip_price"
+                tools:text="5000" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center|left"
+                android:text="借款明细"
+                android:textColor="@color/color_txt_33"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/color_bg_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/text_loan_detail_submit_loan_term"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txt_loan_period"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/color_txt_33"
+                    android:textSize="14sp"
+                    tools:text="1个月" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tv_month"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:drawablePadding="2dp"
+                    android:drawableRight="@mipmap/icon_homepage_tips"
+                    android:text="@string/text_loan_detail_submit_loan_month"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/txt_month_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/color_txt_33"
+                    android:textSize="14sp"
+                    tools:text="3000.00" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/text_loan_detail_submit_repayment_type"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="等额本息"
+                    android:textColor="@color/color_txt_33"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/text_loan_detail_submit_loan_type"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_loan_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:drawableRight="@mipmap/ic_verify_loan_arrow_right"
+                    android:gravity="center"
+                    android:text="@string/text_loan_detail_submit_select"
+                    android:textColor="@color/color_text_af"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="还款来源"
+                    android:textColor="@color/text_color_normal"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_loan_term"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:drawableRight="@mipmap/ic_verify_loan_arrow_right"
+                    android:gravity="center"
+                    android:text="@string/text_loan_detail_submit_select"
+                    android:textColor="@color/color_text_af"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_card_info"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/shape_loan_detail_add_card"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/tv_add_card_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@mipmap/icon_loandetails_bankcard"
+                    android:drawablePadding="8dp"
+                    android:text="请添加收款银行卡"
+                    android:textColor="@color/color_txt_33"
+                    android:textSize="14sp" />
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cd_bankInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@mipmap/ic_bank_bg_0_2"
+                        tools:background="@mipmap/ic_bank_bg_0_2">
+
+                        <ImageView
+                            android:id="@+id/image"
+                            android:layout_width="26dp"
+                            android:layout_height="26dp"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="18dp"
+                            android:layout_marginRight="@dimen/x24"
+                            android:layout_marginTop="25dp"
+                            android:background="@mipmap/ic_launcher"
+                            android:scaleType="centerCrop" />
+
+                        <TextView
+                            android:id="@+id/tv_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginLeft="9dp"
+                            android:layout_marginTop="25dp"
+                            android:layout_toRightOf="@id/image"
+                            android:textColor="@color/text_white_color"
+                            android:textSize="18sp"
+                            tools:text="招商银行" />
+
+                        <TextView
+                            android:id="@+id/tv_card_num"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv_name"
+                            android:layout_marginLeft="59dp"
+                            android:layout_marginRight="59dp"
+                            android:layout_marginTop="18dp"
+                            android:gravity="center"
+                            android:textColor="@color/text_white_color"
+                            android:textSize="16sp"
+                            tools:text="@string/bank_card_no" />
+
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:gravity="center">
+
+                <CheckBox
+                    android:id="@+id/cb_agreement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/bg_read_agreement"
+                    android:text="我已阅读并同意"
+                    android:textColor="#FF959595"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_agreement_loan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="《借款相关协议》"
+                    android:textColor="@color/color_colorPrimary"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <com.ald.ebei.ui.EbeiNoDoubleClickButton
+                android:id="@+id/btn_apply"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="53dp"
+                android:layout_marginRight="53dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_next_button"
+                android:text="确认提交"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="15dp"
+                android:drawableLeft="@mipmap/icon_bottom_loandetails_tips"
+                android:drawablePadding="2dp"
+                android:text="请谨慎评估您的还款能力"
+                android:textColor="@color/color_txt_home_tip_bottom"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

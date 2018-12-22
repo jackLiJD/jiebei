@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:paddingLeft="11dp"
+    android:paddingRight="11dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="1dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/ic_bank_bg_0_2"
+        tools:background="@mipmap/ic_bank_bg_0_2">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="@dimen/x24"
+            android:layout_marginTop="26dp"
+            android:background="@mipmap/ic_launcher"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="27dp"
+            android:layout_toRightOf="@id/image"
+            android:textColor="@color/text_white_color"
+            android:textSize="18sp"
+            tools:text="招商银行" />
+
+        <TextView
+            android:id="@+id/tv_is_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="31dp"
+            android:layout_toRightOf="@+id/tv_name"
+            android:background="@drawable/frame_bank_card_main"
+            android:paddingBottom="2dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="2dp"
+            android:text="主卡"
+            android:textColor="@color/text_normal_color"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_card_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_marginLeft="59dp"
+            android:layout_marginRight="59dp"
+            android:layout_marginTop="38dp"
+            android:gravity="center"
+            android:textColor="@color/text_white_color"
+            android:textSize="16sp"
+            tools:text="****     ****     ****     8888" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

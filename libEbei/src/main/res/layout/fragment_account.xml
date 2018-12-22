@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF5F5F5"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_head_with_right_img_btn" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="146dp"
+                android:layout_margin="15dp"
+                android:background="@drawable/bg_login_fragment_user_msg">
+
+                <ImageView
+                    android:id="@+id/img_user_head_portrait"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="22dp"
+                    android:src="@drawable/icon_head_portrait" />
+
+                <com.ald.ebei.ui.EbeiNoDoubleClickButton
+                    android:id="@+id/btn_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@+id/img_user_head_portrait"
+                    android:background="@null"
+                    android:text="点击登录"
+                    android:textColor="#FF3F3F40"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/txt_user_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_toEndOf="@id/img_user_head_portrait"
+                    android:text="123****1231"
+                    android:textColor="#FF3F3F40"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/bg_login_fragment_user_msg"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_loan_record"
+                    android:layout_width="match_parent"
+                    android:layout_height="63dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="16dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="11dp"
+                        android:src="@drawable/icon_minepage_loanrecord" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="14dp"
+                        android:drawableEnd="@mipmap/ic_arrow_right"
+                        android:text="借款记录"
+                        android:textColor="#FF3F3F40"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="21dp"
+                    android:background="#F1F1F1" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_pay_menth_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="63dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="16dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="11dp"
+                        android:src="@drawable/icon_minepage_paymenthistory" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="14dp"
+                        android:drawableEnd="@mipmap/ic_arrow_right"
+                        android:text="还款记录"
+                        android:textColor="#FF3F3F40"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="21dp"
+                    android:background="#F1F1F1" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_bank_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="63dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="16dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="11dp"
+                        android:src="@drawable/icon_minepage_bankcard" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="14dp"
+                        android:drawableEnd="@mipmap/ic_arrow_right"
+                        android:text="银行卡管理"
+                        android:textColor="#FF3F3F40"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="21dp"
+                    android:background="#F1F1F1" />
+
+
+                <LinearLayout
+                    android:id="@+id/ll_help_center"
+                    android:layout_width="match_parent"
+                    android:layout_height="63dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="18dp"
+                        android:layout_height="16dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="11dp"
+                        android:src="@drawable/icon_minepage_help" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="14dp"
+                        android:drawableEnd="@mipmap/ic_arrow_right"
+                        android:text="帮助中心"
+                        android:textColor="#FF3F3F40"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
