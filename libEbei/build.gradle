@@ -88,12 +88,11 @@ dependencies {
     api 'com.contrarywind:Android-PickerView:4.1.6'
     implementation 'com.youth.banner:banner:1.4.10'
     //后加
-//    implementation files('libs/jcore-BauduLBS_Android-1.2.1.jar')
-    implementation files('libs/bcprov-jdk16-1.46.jar')
-    implementation files('libs/fm-sdk-3.0.5.jar')
-    implementation files('libs/idcardquality-proguard-1.2.2.jar')
-    implementation files('libs/licensemanager-v1.2.jar')
-    implementation files('libs/livenessdetection-proguard-2.4.5.jar')
+    compileOnly files('libs/bcprov-jdk16-1.46.jar')
+    compileOnly files('libs/fm-sdk-3.0.5.jar')
+    compileOnly files('libs/idcardquality-proguard-1.2.2.jar')
+    compileOnly files('libs/licensemanager-v1.2.jar')
+    compileOnly files('libs/livenessdetection-proguard-2.4.5.jar')
     compileOnly files('libs/baiqishi-risk-sdk-2.2.1.jar')
     implementation files('libs/BaiduLBS_Android.jar')
 }
